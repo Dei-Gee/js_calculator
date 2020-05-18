@@ -34,6 +34,7 @@ body {
 
 .wrapper:first-child {
     height: 10%;
+    flex-direction: column;
 }
 
 .wrapper:nth-child(2) {
@@ -52,6 +53,16 @@ body {
     direction: rtl;
     font-size: larger;
     margin-top: 0;
+}
+
+.top-output {
+    background-color: black;
+    color: white;
+    margin-top: 0;
+    direction: rtl;
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .wrapper > .left {
