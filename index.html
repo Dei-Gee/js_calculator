@@ -13,62 +13,31 @@
     </head>
 
     <body>
-        <section class="wrapper">
-            <span class="top-output">0.00</span>
-            <span class="output">0.00</span>
-        </section>
-
-        <section class="wrapper">
-            <div class="left">
-                <div class="row">
-                    <button class="btn-regular">7</button>
-                    <button class="btn-regular">8</button>
-                    <button class="btn-regular">9</button>
-                </div>
-
-                <div class="row">
-                    <button class="btn-regular">4</button>
-                    <button class="btn-regular">5</button>
-                    <button class="btn-regular">6</button>
-                </div>
-
-                <div class="row">
-                    <button class="btn-regular">1</button>
-                    <button class="btn-regular">2</button>
-                    <button class="btn-regular">3</button>
-                </div>
-
-                <div class="row">
-                    <button class="btn-regular">%</button>
-                    <button class="btn-regular">0</button>
-                    <button class="btn-regular" style="font-size:30px">.</button>
-                </div>
-
-                <div class="row">
-                    <button class="btn-regular">x<sup>2</sup></button>
-                    <button class="btn-regular">+/-</button>
-                    <button class="btn-regular">&#8730;x</button>
-                </div>
+        <main class="calculator-grid">
+            <div class="output">
+                <div class="previous-operand" data-previous-operand></div>
+                <div class="current-operand" data-current-operand></div>
             </div>
-            
-            <div class="right">
-                <button class="btn-operations">
-                    +
-                </button>
-                <button class="btn-operations">
-                    -
-                </button>
-                <button class="btn-operations">
-                    *
-                </button>
-                <button class="btn-operations">
-                    /
-                </button>
-                <button class="btn-operations">
-                    =
-                </button>
-            </div>
-        </section>
+
+            <button class="span-two" data-all-clear>AC</button>
+            <button data-delete>DEL</button>
+            <button data-operation>÷</button>
+            <button data-number>7</button>
+            <button data-number>8</button>
+            <button data-number>9</button>
+            <button data-operation>*</button>
+            <button data-number>4</button>
+            <button data-number>5</button>
+            <button data-number>6</button>
+            <button data-operation>-</button>
+            <button data-number>1</button>
+            <button data-number>2</button>
+            <button data-number>3</button>
+            <button data-operation>+</button>
+            <button data-number>.</button>
+            <button data-number>0</button>
+            <button data-equals class="span-two">=</button>
+        </main>
 
         <!-- Scripts -->
         <script src="js/index.js"></script>
